@@ -1,0 +1,59 @@
+Hydrogen Bond ARG_417_B not_prestable bound_stable sidechain 20 3 , HIS_18_A not_prestable bound_stable sidechain 12 3 , 2.04594 162.391 142.394
+Hydrogen Bond HIS_21_A not_prestable bound_stable sidechain 12 6 , ASN_418_B prestable bound_stable backbone 27 12 , 1.85202 141.002 139.662
+Hydrogen Bond TYR_28_A not_prestable not_bound_stable sidechain 5 5 , GLU_327_B not_prestable not_bound_stable sidechain 30 19 , 2.34842 146.694 138.539
+Hydrogen Bond LYS_41_A prestable bound_stable sidechain 12 12 , GLU_327_B not_prestable not_bound_stable sidechain 30 19 , 2.42379 150.833 123.294
+Hydrogen Bond TRP_276_B not_prestable bound_stable sidechain 14 6 , LEU_45_A not_prestable not_bound_stable backbone 6 3 , 1.89904 137.474 110.922
+Hydrogen Bond GLN_46_A not_prestable not_bound_stable sidechain 66 53 , GLU_320_B not_prestable not_bound_stable sidechain 25 20 , 1.99187 142.194 145.68
+Hydrogen Bond ARG_271_B prestable bound_stable sidechain 3 2 , GLU_56_A not_prestable bound_stable sidechain 23 13 , 2.11757 148.578 109.337
+Hydrogen Bond ARG_271_B prestable bound_stable sidechain 3 2 , GLU_56_A not_prestable bound_stable sidechain 23 13 , 1.79614 176.594 109.968
+Hydrogen Bond ILE_303_B prestable bound_stable backbone 2 1 , SER_62_A not_prestable not_bound_stable backbone 3 3 , 1.83096 155.049 171.085
+Hydrogen Bond ARG_64_A not_prestable bound_stable sidechain 43 2 , GLU_244_B not_prestable bound_stable sidechain 19 11 , 1.80374 155.146 94.1844
+Hydrogen Bond ARG_167_A prestable bound_stable sidechain 3 2 , ASP_326_B not_prestable bound_stable sidechain 4 1 , 1.84183 148.659 170.885
+Hydrogen Bond ARG_167_A prestable bound_stable sidechain 3 2 , ASP_326_B not_prestable bound_stable sidechain 4 1 , 2.06008 139.637 170.864
+Hydrogen Bond LYS_168_A prestable bound_stable sidechain 10 1 , TRP_304_B not_prestable bound_stable backbone 14 0 , 1.92476 158.739 125.047
+Hydrogen Bond ARG_243_B prestable bound_stable sidechain 10 9 , ASP_171_A prestable bound_stable sidechain 6 3 , 2.11588 148.514 137.554
+Hydrogen Bond TRP_304_B not_prestable bound_stable sidechain 14 0 , ASP_171_A prestable bound_stable sidechain 6 3 , 1.82069 157.565 119.977
+Hydrogen Bond ARG_243_B prestable bound_stable sidechain 10 9 , THR_175_A prestable bound_stable sidechain 1 1 , 2.076 157.64 107.184
+Salt Bridge LYS_41_A prestable bound_stable sidechain 12 12 , GLU_327_B not_prestable not_bound_stable sidechain 30 19 , 3.34245
+Salt Bridge ARG_271_B prestable bound_stable sidechain 3 2 , GLU_56_A not_prestable bound_stable sidechain 23 13 , 3.56133
+Salt Bridge ARG_64_A not_prestable bound_stable sidechain 43 2 , GLU_244_B not_prestable bound_stable sidechain 19 11 , 3.71612
+Salt Bridge ARG_64_A not_prestable bound_stable sidechain 43 2 , ASP_364_B not_prestable bound_stable sidechain 12 12 , 3.61189
+Salt Bridge ARG_167_A prestable bound_stable sidechain 3 2 , ASP_326_B not_prestable bound_stable sidechain 4 1 , 2.75417
+Salt Bridge ARG_243_B prestable bound_stable sidechain 10 9 , ASP_171_A prestable bound_stable sidechain 6 3 , 3.02399
+Hydrophobic Interaction HIS_18_A not_prestable bound_stable sidechain 12 3 , ARG_417_B not_prestable bound_stable sidechain 20 3 , 40.1338
+Hydrophobic Interaction TYR_42_A prestable bound_stable sidechain 2 2 , LYS_321_B not_prestable bound_stable backbone 19 11 , 28.0717
+Hydrophobic Interaction TYR_42_A prestable bound_stable sidechain 2 2 , LYS_321_B not_prestable bound_stable sidechain 19 11 , 26.5527
+Hydrophobic Interaction TYR_42_A prestable bound_stable backbone 2 2 , CYS_322_B prestable bound_stable sidechain 2 0 , 39.3236
+Hydrophobic Interaction TYR_42_A prestable bound_stable sidechain 2 2 , CYS_322_B prestable bound_stable backbone 2 0 , 31.3908
+Hydrophobic Interaction TYR_42_A prestable bound_stable sidechain 2 2 , CYS_322_B prestable bound_stable sidechain 2 0 , 51.3763
+Hydrophobic Interaction LEU_45_A not_prestable not_bound_stable sidechain 6 3 , PRO_306_B prestable bound_stable sidechain 0 0 , 57.0105
+Hydrophobic Interaction LEU_45_A not_prestable not_bound_stable sidechain 6 3 , CYS_322_B prestable bound_stable sidechain 2 0 , 37.0575
+Hydrophobic Interaction LEU_45_A not_prestable not_bound_stable sidechain 6 3 , PHE_323_B prestable bound_stable backbone 5 5 , 31.3814
+Hydrophobic Interaction GLN_46_A not_prestable not_bound_stable backbone 66 53 , TRP_276_B not_prestable bound_stable sidechain 14 6 , 38.6243
+Hydrophobic Interaction GLN_46_A not_prestable not_bound_stable sidechain 66 53 , CYS_308_B prestable bound_stable sidechain 1 1 , 30.1908
+Hydrophobic Interaction PRO_48_A prestable bound_stable sidechain 0 0 , ARG_271_B prestable bound_stable sidechain 3 2 , 25.3432
+Hydrophobic Interaction PRO_48_A prestable bound_stable sidechain 0 0 , GLU_275_B prestable bound_stable backbone 0 0 , 34.9958
+Hydrophobic Interaction PRO_48_A prestable bound_stable sidechain 0 0 , GLU_275_B prestable bound_stable sidechain 0 0 , 38.3149
+Hydrophobic Interaction PRO_48_A prestable bound_stable sidechain 0 0 , TRP_276_B not_prestable bound_stable sidechain 14 6 , 34.4004
+Hydrophobic Interaction LEU_52_A not_prestable not_bound_stable sidechain 3 3 , GLN_274_B not_prestable not_bound_stable backbone 87 41 , 28.9623
+Hydrophobic Interaction LEU_52_A not_prestable not_bound_stable sidechain 3 3 , GLN_274_B not_prestable not_bound_stable sidechain 87 41 , 59.4342
+Hydrophobic Interaction PRO_61_A prestable bound_stable backbone 0 0 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 25.3385
+Hydrophobic Interaction SER_62_A not_prestable not_bound_stable sidechain 3 3 , SER_302_B not_prestable not_bound_stable sidechain 3 3 , 24.7385
+Hydrophobic Interaction SER_62_A not_prestable not_bound_stable sidechain 3 3 , ILE_305_B prestable bound_stable sidechain 1 1 , 38.3196
+Hydrophobic Interaction ASN_63_A prestable bound_stable backbone 0 0 , TRP_369_B prestable bound_stable sidechain 4 1 , 31.6861
+Hydrophobic Interaction ARG_64_A not_prestable bound_stable sidechain 43 2 , GLU_244_B not_prestable bound_stable sidechain 19 11 , 34.9958
+Hydrophobic Interaction ARG_64_A not_prestable bound_stable sidechain 43 2 , ASP_364_B not_prestable bound_stable sidechain 12 12 , 25.648
+Hydrophobic Interaction ARG_64_A not_prestable bound_stable backbone 43 2 , TRP_369_B prestable bound_stable sidechain 4 1 , 33.5051
+Hydrophobic Interaction ARG_64_A not_prestable bound_stable sidechain 43 2 , TRP_369_B prestable bound_stable sidechain 4 1 , 72.4106
+Hydrophobic Interaction THR_67_A prestable bound_stable sidechain 1 1 , TRP_369_B prestable bound_stable sidechain 4 1 , 37.4148
+Hydrophobic Interaction GLN_68_A not_prestable not_bound_stable sidechain 41 40 , LYS_367_B prestable bound_stable sidechain 43 14 , 38.0101
+Hydrophobic Interaction LYS_168_A prestable bound_stable sidechain 10 1 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 50.0817
+Hydrophobic Interaction LYS_172_A prestable bound_stable backbone 10 1 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 33.2004
+Hydrophobic Interaction LYS_172_A prestable bound_stable sidechain 10 1 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 83.9057
+Hydrophobic Interaction THR_175_A prestable bound_stable sidechain 1 1 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 25.3385
+Hydrophobic Interaction THR_175_A prestable bound_stable sidechain 1 1 , TRP_369_B prestable bound_stable sidechain 4 1 , 29.8671
+Hydrophobic Interaction PHE_176_A not_prestable not_bound_stable sidechain 8 8 , TRP_304_B not_prestable bound_stable sidechain 14 0 , 42.5482
+Hydrophobic Interaction ARG_178_A prestable bound_stable sidechain 12 0 , VAL_371_B prestable bound_stable sidechain 1 1 , 60.0437
+Hydrophobic Interaction ILE_179_A prestable bound_stable sidechain 1 1 , TRP_369_B prestable bound_stable sidechain 4 1 , 34.691
+Hydrophobic Interaction CYS_182_A prestable bound_stable sidechain 0 0 , LYS_367_B prestable bound_stable backbone 43 14 , 38.143
+Hydrophobic Interaction CYS_182_A prestable bound_stable sidechain 0 0 , GLY_368_B prestable bound_stable backbone 1 1 , 25.8618

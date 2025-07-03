@@ -1,0 +1,150 @@
+# Created by the Pantazes Lab at Auburn University.
+# 
+# This file is an example of a PANTZ instruction file for adhoc calculations.
+# Such calculations are the most flexible protocol in PANTZ, as they can run 
+# any type of calculation, but also the most involved because they must specify
+# every detail of the calculations.
+# 
+# Interfacing with the PANTZ executable requires the use of an instruction file,
+# such as this file. The '#' symbol that has started all lines so far in this
+# file is the comment symbol for this program. All information after such a
+# symbol is ignored by the parser. Comment symbols can appear at the start or
+# end of a line. The parser also ignores blank lines, such as the next one.
+
+# Instructions in these files are separated into three parts. The first is a 
+# command type. Command types are not case sensitive - the parser converts them 
+# to lower case letters as it analyzes them - but they must be spelled
+# correctly. Whitespace leading or trailing the command type is permitted and 
+# will be stripped away by the parser.
+
+# The second component of an instruction is the demarcation character, ':'. 
+# This character must appear exactly once in an instruction line and separates
+# the command type from the details of the instruction. 
+
+# The final component of an instruction occurs after the demarcation character,
+# and is the details of the instruction - what the program is actually supposed 
+# to do. Leading and trailing whitespace from the details will be removed by the 
+# parser, but internal whitespace will be kept. Most instruction details are
+# case sensitive and capitalization will not be changed by the parser.
+
+# The first instruction that must appear in every PANTZ instruction file is a 
+# calculation type. This tells the parser what sort of protocol to run. As
+# should be assumed, the appropriate label for adhoc calculations is 'adhoc'
+Calculation Type: adhoc
+
+# The next several instructions in adhoc calculations MUST appear in order in 
+# the instruction file. They provide guidance on how the calculations will run, 
+# rather than being instructions on what specific calculations to do.
+
+# The first of these is the name of the calculations. This is a unique
+# identifier that will be used in naming the files (and folders) created by the 
+# calculations, if any. 
+Calculation Name: demonstration
+
+# The second command is an output path. This tells the program where to write 
+# generated content to. This command is optional and the default behavior is 
+# to use the current folder if the command is skipped. Note that the provided
+# path is not error checked for saftey and cannot contain any spaces.
+Output Path: ./
+
+# The third command is whether or not to create a folder where the results will
+# be stored. The only acceptable instruction values are:
+# YES, Yes, yes, Y, y, TRUE, True, true, T and t for creating the folder AND
+# NO, No, no, N, n, FALSE, False, false, F and f for not creating the folder
+# This is an optional command and the default behavior is to create an output
+# folder to store values. If created, the name of the folder matches the name 
+# of the calculations. At the default bomb level (see one of the next few
+# commands), the program will throw an error if the folder cannot be created 
+# for any reason, including if it already exists.
+Create Output Folder: yes
+
+# The fourth adhoc command is whether or not to create a summary file with 
+# details of the calculations. This is an optional instruction. The default
+# behavior is to create the file if no command is provided. At the default bomb 
+# level, if no output folder is being created the program will throw an error if 
+# a summary file already exists.
+Create Summary File: yes
+
+# The fifth and final general adhoc command is whether or not previous results
+# should be overwritten. If the previous folder already exists or the summary
+# file already exists, this command tells the program whether the previous
+# contents should be overwritten or left alone. This command is optional and the 
+# default behavior is false.
+Overwrite Previous: no
+
+# The adhoc calculations can do many things, many of which should be included in
+# this example file.
+
+# An important task is to load a protein, so the system can work with it. Note
+# that currently the PANTZ software can ONLY work with amino acid based
+# proteins. The function only loads in the parts of proteins that are amino acid
+# based and for which there is at least one atom in the PDB file.
+
+# This command STARTS the standard process of loading a protein.
+# At this time there is no non-standard process, but one is envisioned
+Load Protein: Standard
+# The folder where hte protein is located comes next. Thsi is optional and the 
+# current folder is default if it is missing
+Folder: ./structures/
+# The name of the PDB file
+File: 5aaw.pdb
+# The chain. The information can be a single character or a phrase such as 
+# X as Y, which would load chain X from the file as Y in the calculations
+Chain: A
+
+# Chain A in 5aaw is an scfv. Chain C is the antigen that it is binding to. 
+# Also load Chain C, renaming it to B
+Load Protein: Standard
+Folder: ./structures/
+File: 5aaw.pdb
+Chain: C as B
+
+# After proteins are loaded, it is expected that some calculations will be done 
+# with them. One tool to do that is the CHARMM molecular mechanics force field.
+# Commands to use CHARMM start with the keyword 'CHARMM', and there are
+# currently four options. The first runs an energy minimization where the
+# backbone N, CA, and C atoms cannot move
+# CHARMM: Fixed Backbone Energy Minimization
+
+# The second runs an energy minimization where those backbone atoms are 
+# subjected to a strong harmonic constraint. They can move, but not much
+# CHARMM: Harmonic Backbone Energy Minimization
+
+# The third option runs an energy minimization where all atoms are allowed
+# to move
+# CHARMM: All Atom Energy Minimization
+
+# The fourth option doesn't run an energy minimization. Instead, it uses 
+# CHARMM to add in any atoms that are missing in a protein's experimental 
+# structure based on the ideal internal coordinates of those atoms. In this
+# demonstration file, this command is not commented out.
+CHARMM: Add Missing Atoms
+
+# In addition to CHARMM, PANTZ can also do Rosetta calculations. The command 
+# type is 'Rosetta'. Like other command types, it is not case sensitive.
+
+# Rosetta can be used to run energy minimizations. Unlike CHARMM, there is only 
+# one option here, which is an all atom option.
+Rosetta: Energy Minimization
+
+# Another thing Rosetta can be used for is to analyze the interface of a binding
+# complex. By definition, in a binding complex a group of one or more proteins
+# is binding with a second group of one or more proteins. The command for the 
+# interface analyzer includes the specification for ONE of the groups, with all
+# remaining proteins assumed to be in the second group. In the event that the 
+# calculations consider only 2 proteins, the group specification can be ignored
+# and the proteins will be automatically assigned.
+Rosetta: Interface Analysis A
+
+# A third PANTZ application of Rosetta is to do per residue energy contribution
+# calculations. This is done with the command:
+# Rosetta: Per Residue
+
+# Once calculations have been completed, it is very likely that the structures
+# should be output for reference. This is done using the 'write proteins'
+# command. This is a single line command that will write the proteins to a 
+# PDB file. The provided information is either the keyword 'all', which will 
+# output all proteins, or a list of the specific proteins to output.
+Write Proteins: all
+# The equivalent command in this example file by list would be
+# Write Proteins: A B

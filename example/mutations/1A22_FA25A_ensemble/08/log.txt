@@ -1,0 +1,6 @@
+Rosetta Per Residue Energy calculations started on Thu, Mar 20, 2025 at 16:29:10
+Calculations ended on Thu, Mar 20, 2025 at 16:29:12
+
+Rosetta Interface Analyzer started on Thu, Mar 20, 2025 at 16:29:12
+Calculations ended on Thu, Mar 20, 2025 at 16:29:17
+

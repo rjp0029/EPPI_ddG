@@ -1,0 +1,52 @@
+Number of persistent interactions: 0.0507
+Number of persistent interactions/Buried Surface Area: 0.0467
+Rosetta Interaction Energy/Buried Surface Area: 0.0421
+Rosetta Interaction Energy: 0.0411
+Number of persistent hydrophobic interactions*Rosetta Interaction Energy: 0.0400
+Number of persistent hydrophobic interactions*Rosetta Interaction Energy/Buried Surface Area: 0.0354
+Number of persistent hydrogen bonds: 0.0304
+Number of persistent hydrogen bonds*Number of non-persistent hydrogen bonds: 0.0280
+Number of persistent hydrophobic interactions*Rotamers lost in persistent interactions: 0.0279
+Rotamers lost in persistent interactions: 0.0271
+Expected persistent binding energy: 0.0236
+Number of persistent salt bridges*Number of non-persistent hydrogen bonds: 0.0221
+Number of persistent salt bridges*Number of persistent hydrogen bonds: 0.0212
+Shape Complementarity: 0.0199
+Expected persistent binding energy of hydrophobic interactions/Expected persistent binding energy: 0.0198
+Rotamers lost in persistent hydrophobic interactions*Number of stable-stable hydrophobic interactions: 0.0197
+Number of stable-stable hydrophobic interactions: 0.0194
+Rotamers lost in persistent hydrophobic interactions*Rosetta Interaction Energy: 0.0194
+Rotamers lost in non-persistent hydrogen bonds*Expected persistent binding energy of hydrogen bonds: 0.0188
+Expected persistent binding energy of hydrophobic interactions*Rotamers lost in persistent interactions/Buried Surface Area: 0.0188
+Number of persistent salt bridges: 0.0187
+Expected persistent binding energy of hydrogen bonds/Expected persistent binding energy: 0.0184
+Rotamers lost in persistent hydrophobic interactions: 0.0183
+Rotamers lost in persistent hydrogen bonds: 0.0178
+Expected persistent binding energy of hydrophobic interactions: 0.0175
+Buried Surface Area*Shape Complementarity: 0.0170
+Number of non-persistent hydrogen bonds: 0.0148
+Rotamers lost in persistent hydrogen bonds/Rotamers lost in persistent interactions: 0.0148
+Number of non-persistent hydrogen bonds*Expected persistent binding energy of hydrogen bonds: 0.0145
+Number of stable-stable hydrophobic interactions/Total number of interactions: 0.0141
+Rotamers lost in non-persistent hydrogen bonds: 0.0139
+Expected persistent binding energy of hydrogen bonds/Rosetta Interaction Energy: 0.0137
+Non-persistent binding energy/Expected persistent binding energy: 0.0136
+Number of persistent hydrophobic interactions/Buried Surface Area: 0.0136
+Rotamers lost in non-persistent hydrogen bonds*Non-persistent binding energy: 0.0135
+Number of stable-stable interactions/Total number of interactions: 0.0130
+Shape Complementarity/Buried Surface Area: 0.0128
+Number of non-persistent hydrogen bonds*Non-persistent binding energy: 0.0128
+Expected persistent binding energy of hydrophobic interactions/Rosetta Interaction Energy: 0.0128
+Rotamers lost in persistent hydrophobic interactions*Expected persistent binding energy of hydrogen bonds/Buried Surface Area: 0.0125
+Non-persistent binding energy: 0.0122
+Number of persistent hydrophobic interactions: 0.0118
+Rotamers lost in non-persistent hydrogen bonds/Total rotamers lost: 0.0118
+Number of persistent hydrophobic interactions*Non-persistent binding energy: 0.0115
+Expected persistent binding energy of salt bridges/Expected persistent binding energy: 0.0111
+Number of persistent salt bridges*Expected persistent binding energy of hydrogen bonds: 0.0109
+Expected persistent binding energy of hydrogen bonds: 0.0105
+Number of persistent hydrophobic interactions*Buried Surface Area: 0.0105
+Expected persistent binding energy of salt bridges/Rosetta Interaction Energy: 0.0104
+Buried Surface Area: 0.0099
+Non-persistent binding energy/Rosetta Interaction Energy: 0.0098
+Number of persistent salt bridges*Non-persistent binding energy: 0.0094

@@ -1,0 +1,25 @@
+# A demonstration of ADHOC PANTZ calculations
+
+Calculation Type: adhoc
+Calculation Name: adhoc_example
+Output Path: ./results/
+Create Output Folder: yes
+Create Summary File: yes
+Overwrite Previous: no
+
+Load Protein: Standard
+Folder: ./structures/
+File: 5aaw.pdb
+Chain: A
+
+Load Protein: Standard
+Folder: ./structures/
+File: 5aaw.pdb
+Chain: C as B
+
+CHARMM: Fixed Backbone Energy Minimization
+Rosetta: Energy Minimization
+Rosetta: Interface Analysis A
+Rosetta: Per Residue
+
+Write Proteins: all

@@ -1,0 +1,75 @@
+********  (C) Copyright Rosetta Commons Member Institutions.  ***************
+* Use of Rosetta for commercial purposes may require purchase of a license. *
+********  See LICENSE.md or email license@uw.edu for more details. **********
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: 2025.04.post.dev+1.main.e5e4b278be e5e4b278bef53bc7e6fd8db181383a8adf7a3c9a https://github.com/RosettaCommons/rosetta 2025-01-23T18:15:53
+core.init: Rosetta extras: []
+core.init: command: /Users/acr0116/Desktop/rosetta/source/bin/InterfaceAnalyzer.default.macosclangrelease @rosetta_proteins_A_B_flags.txt
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-1934060889 seed_offset=0 real_seed=-1934060889
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-1934060889 RG_type=mt19937
+core.init: Resolved executable path: /Users/acr0116/Desktop/rosetta/source/bin/InterfaceAnalyzer.default.macosclangrelease
+core.init: Looking for database based on location of executable: /Users/acr0116/Desktop/rosetta/database/
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed rosetta_proteins_A_B.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.374983 seconds.
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB rosetta_proteins_A_B.pdb
+core.import_pose.import_pose: File 'rosetta_proteins_A_B.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+apps.public.analysis.InterfaceAnalyzer: Computing interface between two chains in pose
+protocols.analysis.InterfaceAnalyzerMover: Using normal constructor
+protocols.analysis.InterfaceAnalyzerMover: Making an interface set with default calculator.
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/acr0116/Desktop/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/acr0116/Desktop/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.06245 seconds to load from binary
+protocols.analysis.InterfaceAnalyzerMover: Detecting disulfides in the separated pose.
+protocols.analysis.InterfaceAnalyzerMover: Calculating dSASA
+protocols.analysis.InterfaceAnalyzerMover: Calculating per-res dSASA data
+protocols.analysis.InterfaceAnalyzerMover: included_nres: 396
+protocols.analysis.InterfaceAnalyzerMover: Making hbond ScoreFunction with bb-bb energy method options
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+protocols.analysis.InterfaceAnalyzerMover: Computing interface packstats.
+protocols.analysis.InterfaceAnalyzerMover: Total: 396 PackScoresTotal: 396
+protocols.analysis.InterfaceAnalyzerMover: Computing delta unsat polar residues...
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/sc/sc_radii.lib
+protocols.analysis.InterfaceAnalyzerMover: Computing Shape Complementarity Score...
+protocols.analysis.InterfaceAnalyzerMover: Upstream chain(s) numbers: 1, 
+protocols.analysis.InterfaceAnalyzerMover: Downstream chain(s) numbers: 2, 
+protocols.jd2.JobDistributor: rosetta_proteins_A_B_0001 reported success in 3 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 3 seconds
+protocols.jd2.JobDistributor: [ WARNING ] The following options have been set, but have not yet been used:
+	-interface A_B
+
+apps.public.analysis.InterfaceAnalyzer: ************************d**o**n**e**************************************
