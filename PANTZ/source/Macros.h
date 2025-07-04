@@ -15,7 +15,7 @@
 // This is where you have installed the PANTZ code. This is likely a folder
 // named PANTZ and it should contain the PANTZ.cpp program as well as the
 // compiled executable after it has been compiled.
-#define PANTZ_PATH "/Users/acr0116/Desktop/research/EPPI_ddg_project/EPPI_ddg/PANTZ/"
+#define PANTZ_PATH "/path/to/EPPI_ddG/PANTZ/"
 
 // If you want to use Rosetta through the PANTZ code, you must separately
 // install it on your system. PANTZ works with three Rosetta programs: the
@@ -26,9 +26,9 @@
 // If you are not a member of the PROTEIN PANT(z) lab and you are accessing this
 // file, it is almost certain that you need to use Rosetta to achieve the
 // functionality you are looking for and therefore have to edit these paths.
-#define ROSETTA_MIN_exec "/Users/acr0116/Desktop/rosetta/source/bin/minimize.default.macosclangrelease"
-#define ROSETTA_RIA_exec "/Users/acr0116/Desktop/rosetta/source/bin/InterfaceAnalyzer.default.macosclangrelease"
-#define ROSETTA_REB_exec "/Users/acr0116/Desktop/rosetta/source/bin/residue_energy_breakdown.default.macosclangrelease"
+#define ROSETTA_MIN_exec "/path/to/rosetta/source/bin/minimize.default.macosclangrelease"
+#define ROSETTA_RIA_exec "/path/to/rosetta/source/bin/InterfaceAnalyzer.default.macosclangrelease"
+#define ROSETTA_REB_exec "/path/to/rosetta/source/bin/residue_energy_breakdown.default.macosclangrelease"
 
 // Although they are not part of our publicly disseminated programs, the PROTEIN
 // PANT(z) lab also does calculations with RosettaFold and CHARMM. Therefore, we
