@@ -1,9 +1,9 @@
-# EPPI_ddg
-Pedicting $$\Delta\Delta G$$ with EPPI features. EPPI_ddg has a Pearson correlation coefficient of 0.72 with experimental $$\Delta\Delta G$$ values on a blind validation set.
+# EPPI_ddG
+Pedicting $$\Delta\Delta G$$ with EPPI features. EPPI_ddG has a Pearson correlation coefficient of 0.72 with experimental $$\Delta\Delta G$$ values on a blind validation set.
 
 # Dependencies
 ## Rosetta
-EPPI_ddg requires Rosetta. To obtain Rosetta, navigate to https://github.com/RosettaCommons/rosetta and follow the instructions to download and compile. Namely, you will need to clone the repository:
+EPPI_ddG requires Rosetta. To obtain Rosetta, navigate to https://github.com/RosettaCommons/rosetta and follow the instructions to download and compile. Namely, you will need to clone the repository:
 ```
 cd /PATH/TO/ROSETTA/LOCATION/
 git clone https://github.com/RosettaCommons/rosetta
@@ -20,7 +20,7 @@ Eigen is provided with the distribution in the external directory of PANTZ. No a
 The Dunbrack rotamer library is provided with the distribution in the external directory of PANTZ. No additional installation is required.
 
 ## Python
-EPPI_ddg requires Python becuase the model was trained in sklearn and saved as a joblib file. The following packages are required:
+EPPI_ddG requires Python becuase the model was trained in sklearn and saved as a joblib file. The following packages are required:
 ```
 pip3 install joblib==1.4.2
 ```
@@ -29,18 +29,18 @@ pip3 install joblib==1.4.2
 The code to calculate the EPPI features is written in C++ and requires a C++ compiler. The code was tested with g++ version 9.3.0 and Apple clang version 16.0.0 (clang-1600.0.26.6)
 
 # Installation and Usage
-To download and install EPPI_ddg, navigate to your working directory:
+To download and install EPPI_ddG, navigate to your working directory:
 ```
 cd /PATH/TO/WORKING/DIRECTORY/
 ```
 Then, clone the repository: 
 ```
-git clone https://github.com/alanclayrichard/EPPI_ddg_test.git
+git clone https://github.com/rjp0029/EPPI_ddG_test.git
 ```
 Next, change the paths to the current PANTZ and Rosetta in the PANTZ/source/Macros.h file:
 ``` 
 // define the path to PANTZ which sets the paths to the PANTZ, rotamer lirbary, and Eigen
-#define PANTZ_PATH "/PATH/TO/EPPI_ddg/PANTZ/"
+#define PANTZ_PATH "/PATH/TO/EPPI_ddG/PANTZ/"
 // path to rosetta executables
 #define ROSETTA_MIN_exec "/PATH/TO/ROSETTA/LOCATION/rosetta/source/bin/minimize.default.macosclangrelease"
 #define ROSETTA_RIA_exec "/PATH/TO/ROSETTA/LOCATION/rosetta/source/bin/InterfaceAnalyzer.default.macosclangrelease"
@@ -108,10 +108,10 @@ The output of the program is a series of files in the specified output directory
 The final ddg value is returned as a float from the PROTOCOL::EPPI_ddg_ensemble method in the cpp code as well as printed to the screen. 
 
 # Paper Analysis
-The EPPI_ddg model was trained on a set of 2421 mutations from 163 complexes. The analysis performed in the paper can be found in the `paper_analysis` directory. Transfer learning can be performed by generating experimental $$\Delta\Delta G$$ values for a set of mutations and then retraining the model using the `train_full_model.py` script. The training script used in the paper is provided in the `model_training` directory. The training set can be found in the `data` directory.
+The EPPI_ddG model was trained on a set of 2421 mutations from 163 complexes. The analysis performed in the paper can be found in the `paper_analysis` directory. Transfer learning can be performed by generating experimental $$\Delta\Delta G$$ values for a set of mutations and then retraining the model using the `train_full_model.py` script. The training script used in the paper is provided in the `model_training` directory. The training set can be found in the `data` directory.
 
 # Reference Papers
-link to EPPI_ddg paper
+link to EPPI_ddG paper
 
 - Richard, A.C. and Pantazes, R.J. (2025). *Using Short Molecular Dynamics Simulations to Determine the Important Features of Interactions in Antibody–Protein Complexes.* Proteins, 93: 812-830. (https://doi.org/10.1002/prot.26773)
 
