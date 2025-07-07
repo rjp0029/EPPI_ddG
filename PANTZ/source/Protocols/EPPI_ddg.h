@@ -154,7 +154,7 @@ float PROTOCOL::EPPI_ddg(PROT::PDB* pdb, string mutation, string interface_, str
     }
 
     // run python3 PANTZ_new/models/EPPI_ddg_model.py and get the output that is printed: (ddg prediction: 0.7010752909879802)
-    system("python3 PANTZ/models/EPPI_ddg_model.py --model single_state_2421 > ddg_output.txt");
+    system("python3 PANTZ/models/EPPI_ddg_model.py --model single_state_all_data_compressed > ddg_output.txt");
     ifstream ddg_output("ddg_output.txt");
     string ddg_line;
     getline(ddg_output, ddg_line);
@@ -269,7 +269,7 @@ float PROTOCOL::EPPI_ddg_ensemble(PROT::PDB* pdb, string mutation, string interf
     }
 
     // run python3 PANTZ_new/models/EPPI_ddg_model.py and get the output that is printed: (ddg prediction: 0.7010752909879802)
-    system("python3 PANTZ/models/EPPI_ddg_model.py --model ensemble_2421 > ddg_output.txt");
+    system("python3 PANTZ/models/EPPI_ddg_model.py --model ensemble_all_data_compressed > ddg_output.txt");
     ifstream ddg_output("ddg_output.txt");
     string ddg_line;
     getline(ddg_output, ddg_line);

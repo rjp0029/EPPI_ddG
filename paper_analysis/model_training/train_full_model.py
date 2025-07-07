@@ -34,9 +34,6 @@ def load_skempi(file):
     # remove the middle two parts of the Name, which are the interface chain names
     df.index = df.index.str.split('_').str[0] + "_" + df.index.str.split('_').str[-1]
 
-    # # drop all mutations that have more than one entry
-    # df = df[~df.index.isin(df.index.value_counts()[df.index.value_counts() > 1].index)]
-
     # order of methods for prioritization
     method_order = ['ITC', 'SPR', 'SFFL', 'SP', 'FL']
     
@@ -212,12 +209,6 @@ if __name__ == '__main__':
 
     # convert to dataframe
     delta_features_df = pd.DataFrame(delta_features).T
-    # print(delta_features_df.shape)
-    # # write to csv  
-    # delta_features_df.to_csv('all_delta_features.csv')
-
-    # # load the data
-    # delta_features_df = pd.read_csv('all_delta_features.csv', index_col=0)
 
     # HYPERPARAMETERS
     # parameters for the data processing
@@ -239,10 +230,6 @@ if __name__ == '__main__':
     delta_features_df = balance_sample(delta_features_df, threshold=b)
     print(delta_features_df.shape, " after balancing the data")
 
-    # # write the balanced data to a file
-    # delta_features_df.to_csv('selected_delta_features.csv')
-    # delta_features_df = pd.read_csv('selected_delta_features.csv', index_col=0)
-
     # get X and y
     y = delta_features_df['ddG']
     X = delta_features_df.drop(columns=['ddG'])
@@ -252,4 +239,6 @@ if __name__ == '__main__':
     model.fit(X, y)
 
     # save the model
-    joblib.dump(model, 'ensemble_full.pkl')
+    # joblib.dump(model, 'single_state_all_data_compressed.pkl', compress=('zlib', 3))
+    joblib.dump(model, 'ensemble_all_data_compressed.pkl', compress=('zlib', 3)) 
+

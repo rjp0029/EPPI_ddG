@@ -3,7 +3,7 @@ import argparse
 import warnings
 warnings.filterwarnings("ignore")
 
-def load_model(name="single_state_2421"):
+def load_model(name="single_state_all_data_compressed"):
     return joblib.load(f"PANTZ/models/{name}.pkl")
 
 def load_delta_eppi_features():
@@ -22,7 +22,7 @@ def check_feature_names(model_feature_names, delta_feature_names):
 if __name__ == "__main__":
     # argument parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="single_state_2421", help="Model name to load")
+    parser.add_argument("--model", default="single_state_all_data_compressed", help="Model name to load")
     args = parser.parse_args()
     # load model
     model = load_model(name=args.model)

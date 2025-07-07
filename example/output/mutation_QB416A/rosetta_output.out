@@ -5,8 +5,8 @@ core.init: Checking for fconfig files in pwd and ./rosetta/flags
 core.init: Rosetta version: 2025.04.post.dev+1.main.e5e4b278be e5e4b278bef53bc7e6fd8db181383a8adf7a3c9a https://github.com/RosettaCommons/rosetta 2025-01-23T18:15:53
 core.init: Rosetta extras: []
 core.init: command: /Users/acr0116/Desktop/rosetta/source/bin/minimize.default.macosclangrelease @rosetta_proteins_A_B_flags.txt
-basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=1537346543 seed_offset=0 real_seed=1537346543
-basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=1537346543 RG_type=mt19937
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-359251282 seed_offset=0 real_seed=-359251282
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-359251282 RG_type=mt19937
 core.init: Resolved executable path: /Users/acr0116/Desktop/rosetta/source/bin/minimize.default.macosclangrelease
 core.init: Looking for database based on location of executable: /Users/acr0116/Desktop/rosetta/database/
 core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
@@ -21,7 +21,7 @@ basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_
 basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
 basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
 core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
-core.chemical.GlobalResidueTypeSet: Total time to initialize 0.415442 seconds.
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.387587 seconds.
 basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
 basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
 basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
@@ -49,7 +49,7 @@ core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
 core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
 core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /Users/acr0116/Desktop/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
 core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/Users/acr0116/Desktop/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
-core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.085452 seconds to load from binary
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.067406 seconds to load from binary
 core.pack.pack_rotamers: built 1 rotamers at 1 positions.
 core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
 minimize: Initializing movemap from file rosetta_proteins_A_B_movemap.txt
