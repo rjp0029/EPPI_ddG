@@ -1,4 +1,5 @@
 # EPPI_ddG
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15802285.svg)](https://doi.org/10.5281/zenodo.15802285)
 Pedicting $$\Delta\Delta G$$ with EPPI features. EPPI_ddG has a Pearson correlation coefficient of 0.72 with experimental $$\Delta\Delta G$$ values on a blind validation set.
 
 # Dependencies
